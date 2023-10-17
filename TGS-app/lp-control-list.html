@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/lp-control-list.css">
+	<link rel="stylesheet" href="css/lp-control-search.css">
+</head>
+
+<body>
+	<div class="conteiner d-flex bg-danger">
+		<div class="side-bar d-flex flex-column">
+			<div class="check"><a href="index.html">
+					<p><i class="fa-regular fa-circle-check" style="color: #DC3545;"></i></p>
+				</a>
+			</div>
+			<div class="icon">
+				<a href="">
+					<p><i class="fa-solid fa-list"></i></p>
+				</a>
+				<a href="lp-control-search.html">
+					<p><i class="fa-solid fa-magnifying-glass"></i></p>
+				</a>
+				<a href="">
+					<p><i class="fa-solid fa-file-lines"></i></p>
+				</a>
+				<a href="lp-control-setting.html">
+					<p><i class="fa-solid fa-gear"></i></p>
+				</a>
+			</div>
+		</div>
+		<div class="compenent">
+			<div class="header d-flex justify-content-between">
+				<div class="header-left d-flex">
+					<p class="lp">LP KONTROL</p>
+					<p>|Anasayfa</p>
+				</div>
+				<div class="header-right d-flex">
+					<div class="profile">Yüksel Kuru - 10602 <br>Bilişim Teknolojileri - GM</div>
+					<div class="exit"><i class="fa-solid fa-right-from-bracket" style="color: #C82333;"></i></div>
+				</div>
+			</div>
+			<div class="content d-flex flex-column">
+				<div class="col">
+					<div class="table">
+						<table>
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>TARİH</th>
+									<th>EKİP</th>
+									<th>DENETÇİ</th>
+									<th>HAREKAT <br> MEMURU</th>
+									<th>POSTABAŞI</th>
+									<th>UÇUŞ NO</th>
+									<th>KUYRUK</th>
+									<th>PARK</th>
+									<th>PARK <br>GRUP</th>
+									<th>KARGO FLAMA</th>
+									<th>YÜKLEME <br>TALİMATLARI</th>
+									<th>YÜKLEME <br> DEĞİŞİKLİĞİ</th>
+									<th>1.LP-2.LP <br>SİCİL-İMZA-SAAT</th>
+									<th>2.LP-LS ALINMADAN <br>TESLİM</th>
+									<th>LS-LP <br>UYUMU</th>
+									<th>ÖZEL YÜK <br> RESMİ</th>
+									<th>PUSHBACK <br> YEŞİL FLAMA</th>
+									<th>AKSAKLIK <br> PUANI</th>
+									<th>ORT. AKSAKLIK <br> PUANI</th>
+									<th>AKSAKLIK</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1004</td>
+									<td>10.12.2022</td>
+									<td>D</td>
+									<td>Ebubekir Güllü</td>
+									<td>Hasan Can</td>
+									<td>İsmail Erol</td>
+									<td>TK 1</td>
+									<td>TC JJO</td>
+									<td>G11R</td>
+									<td>G</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>1003</td>
+									<td>10.12.2022</td>
+									<td>D</td>
+									<td>Ebubekir Güllü</td>
+									<td>Melih Sönmez</td>
+									<td>Hakan Yılmaz</td>
+									<td>TK 3</td>
+									<td>TC JJP</td>
+									<td>F11</td>
+									<td>F</td>
+									<td>Takılı</td>
+									<td class="bg-danger">Yazılmamış</td>
+									<td class="bg-danger">Yazılmamış</td>
+									<td>Evet</td>
+									<td>Evet</td>
+									<td class="bg-danger">Uyumsuz</td>
+									<td>Yok</td>
+									<td class="bg-danger">Takılmadı</td>
+									<td>12</td>
+									<td>15</td>
+									<td onclick="personnel_hide()" class="personnel-update bg-danger">Var</td>
+								</tr>
+								<tr>
+									<td>1002</td>
+									<td>10.12.2022</td>
+									<td>D</td>
+									<td>Ebubekir Güllü</td>
+									<td>Volkan Yıldız</td>
+									<td>Hilmi Özcan</td>
+									<td>TK 17</td>
+									<td>TC JJR</td>
+									<td>F16</td>
+									<td>F</td>
+									<td>Takılı</td>
+									<td>Yazılı</td>
+									<td></td>
+									<td>Evet</td>
+									<td>Evet</td>
+									<td>Tam</td>
+									<td>Yok</td>
+									<td>Takıldı</td>
+									<td>0</td>
+									<td>10</td>
+									<td class="bg-success">Yok</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="personnel-page" class="personnel-info">
+						<div class="info-header d-flex">
+							<p>LP KONTROL GÜNCELLEME</p>
+							<p onclick="close_personnel_page()"><i class="fa-solid fa-xmark"></i></p>
+						</div>
+						<div class="info-content d-flex">
+							<div class="info-content-left d-flex">
+								<div class="personnel d-flex flex-column">
+									<div class="phead">
+										<p>PERSONEL</p>
+									</div>
+									<div class="personnel-image">
+										<img src="image/personel.jpg" alt="">
+									</div>
+									<div class="personnel-id">
+										<p>Nejat İşler - 20500</p>
+										<p style="color: #28A745;">10.12.2022 08:00</p>
+									</div>
+									<div class="personnel-box d-flex flex-column">
+										<div class="card-top">
+											<div class="card-box">
+												<p><i class="fa-solid fa-id-card"></i></p>
+												<p>Kayıt ID : 1000</p>
+											</div>
+											<div class="card-box">
+												<p><i class="fa-regular fa-calendar"></i></p>
+												<p>Tarih : 10.12.2022 09:30</p>
+											</div>
+											<div class="card-box">
+												<p><i class="fa-solid fa-calculator"></i></p>
+												<p>Ortalama Aksaklık Puanı : 15</p>
+											</div>
+											<div class="card-box">
+												<p><i class="fa-regular fa-star"></i></p>
+												<p>Aksaklık Puanı : 12</p>
+											</div>
+										</div>
+										<div class="card-bottom">
+											<button>
+												<p><i class="fa-solid fa-phone-flip"></i></p>
+												<p>Personeli Ara</p>
+											</button>
+											<button class="view-history" onclick="history_hide()">
+												<p><i class="fa-solid fa-clock-rotate-left"></i></p>
+												<p>İşlem Geçmişini Görüntüle</p>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="info">
+									<div class="phead">
+										<p>BİLGİ</p>
+									</div>
+									<div class="flight-info">
+										<div class="info-box">
+											<p>Kayıt Tarihi</p>
+											<input type="text">
+										</div>
+										<div class="info-box">
+											<p>Uçuş No:</p>
+											<select></select>
+										</div>
+										<div class="info-box">
+											<p>Kuyruk:</p>
+											<select></select>
+										</div>
+										<div class="info-box">
+											<p>Park Pozisyonu:</p>
+											<select></select>
+										</div>
+										<div class="info-box">
+											<p>Ekip:</p>
+											<select></select>
+										</div>
+										<div class="info-box">
+											<p>Harekat Memuru:</p>
+											<select></select>
+										</div>
+										<div class="info-box">
+											<p>Denetçi:</p>
+											<input type="text">
+										</div>
+										<div class="info-box">
+											<p>Postabaşı:</p>
+											<select></select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="info-content-right d-flex">
+								<div class="aksaklik">
+									<div class="phead">
+										<p>AKSAKLIK</p>
+									</div>
+									<div class="aksaklik-content d-flex">
+										<div class="flight-info">
+											<div class="info-box">
+												<p>Kayıt Tarihi</p>
+												<select></select>
+											</div>
+											<div class="info-box">
+												<p>Uçuş No:</p>
+												<select></select>
+											</div>
+											<div class="info-box">
+												<p>Kuyruk:</p>
+												<select></select>
+											</div>
+											<div class="info-box">
+												<p>Park Pozisyonu:</p>
+												<select></select>
+											</div>
+											<div class="info-box">
+												<p>Ekip:</p>
+												<select></select>
+											</div>
+											<div class="info-box">
+												<p>Harekat Memuru:</p>
+												<select></select>
+											</div>
+											<div class="info-box">
+												<p>Denetçi:</p>
+												<select></select>
+											</div>
+											<div class="info-box">
+												<p>Postabaşı:</p>
+												<select></select>
+											</div>
+										</div>
+										<div class="flight-info-right d-flex flex-column">
+											<div class="notes">
+												<p>Not :</p>
+												<input type="text">
+											</div>
+											<div class="pictures">
+												<p>GÖRSELLER</p>
+												<img src="image/plane-1.jpg">
+												<img src="image/plane-2.jpg">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="info-footer d-flex">
+							<button class="vazgec d-flex">
+								<p><i class="fa-solid fa-rectangle-xmark"></i></p>
+								<p>VAZGEÇ</p>
+							</button>
+							<button class="guncelle d-flex">
+								<p><i class="fa-solid fa-pen"></i></p>
+								<p>GÜNCELLE</p>
+							</button>
+						</div>
+
+					</div>
+					<div id="history-page" class="history">
+						<div class="history-header">
+							<p>İŞLEM GEÇMİŞİ</p>
+							<p onclick="close_page()"><i class="fa-solid fa-xmark"></i></p>
+						</div>
+						<div class="history-content">
+							<div class="history-table">
+								<table>
+									<thead>
+										<tr>
+											<th class="table-th">TARİH</th>
+											<th class="table-th">PERSONEL</th>
+											<th class="table-th">İŞLEM</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>20.10.2022 -10:30</td>
+											<td>Masa Personeli 1</td>
+											<td>Kayıt Silindi</td>
+										</tr>
+										<tr>
+											<td>20.10.2022 -10:30</td>
+											<td>Masa Personeli 2</td>
+											<td>Kayıt Silindi</td>
+										</tr>
+										<tr>
+											<td>20.10.2022 -10:30</td>
+											<td>Mobility Personel 1</td>
+											<td>Kayıt Silindi</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="history-footer"></div>
+					</div>
+				</div>
+			</div>
+			<div class="compenent-footer d-flex flex-column">
+				<div class="find-scroll d-flex justify-content-between">
+					<div class="right d-flex">
+						<p class="angle"><i class="fa-solid fa-angle-left"></i></p>
+						<p class="number">1</p>
+						<p class="number">2</p>
+						<p class="angle"><i class="fa-solid fa-angle-right"></i></p>
+					</div>
+					<div class="left d-flex">
+						<p>Bul :</p>
+						<input type="text">
+					</div>
+				</div>
+				<div class="footer">
+					<p>TGS BİLİŞİM TEKNOLOJİLERİ YAZILIM MÜDÜRLÜĞÜ</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/index.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+input[type="checkbox"]{
+    appearance: none;
+    top: 5px;
+    height: 20px;
+    width: 30px;
+    background-color: #222831;
+    border-radius: 50px;
+    position: absolute;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="checkbox"]::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    transition: 0.3s;
+}
+
+input[type="checkbox"]::after{
+    position: absolute;
+    transition: 0.3s;
+}
+
+input[type="checkbox"]:checked{
+    background-color: #28A745;
+}
+
+input[type="checkbox"]:checked::before{
+    background-color: #222831;
+    left: 15px;
+}
+
+.fa-bell{
+    font-size: 15px;
+    color: #FFD43B;
+}
+
+.bell{
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.bell:hover{
+    animation: bell 1s linear infinite alternate-reverse;
+    transform-origin: top;
+}
+
+@keyframes bell{
+    0%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(20deg);
+    }
+}

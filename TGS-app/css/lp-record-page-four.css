@@ -1,0 +1,123 @@
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .container {
+    max-height: 100vh !important;
+  }
+  
+  p {
+    margin-bottom: 0px !important;
+  }
+  a{
+    color: #FEFEFE;
+  }
+  
+  .side-bar {
+    width: 50px;
+    background-color: #393E46;
+    border-right: 1px solid #222831;
+  }
+  
+  .profile {
+    color: #EEEEEE;
+    font-size: 12px;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .user {
+    font-size: 30px;
+  }
+  
+  .plus-list {
+    align-items: center;
+    font-size: 40px;
+    color: #EEEEEE;
+  }
+/* 
+  .plus-list>a:hover{
+    color: #FFD43B;
+  }
+   */
+  .home {
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .header {
+    height: 30px;
+    background-color: #393E46;
+    color: #EEEEEE;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    padding-right: 30px !important;
+  }
+  
+  .load-plan {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+  }
+  
+  .content {
+    height: calc(100vh - 30px);
+    background-color: #222831;
+  }
+  
+  .main {
+    width: 100%;
+    border: 1px solid #707070;
+    margin: 20px 20px 20px 20px !important;
+  }
+  
+  .icon {
+    font-size: 50px;
+    gap: 60px;
+    margin: 20px 0px 0px 60px !important;
+  }
+  
+  .icon>a {
+    border-bottom: 5px solid;
+    color: #C1C1C1;
+  }
+  
+  .icon>a:hover{
+      border-color: #FFD43B;
+  }
+  
+ 
+  
+.buttons {
+    width: 100%;
+    display: flex;
+    /* height: 50px; */
+    gap: 15px;
+  
+}
+
+.image{
+    /* margin: 20px 30px 0px 60px !important; */
+    color: #C1C1C133;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 400px;
+		font-size: 25rem;
+}
+
+
+.button {
+    padding: 5px 0px 5px 0px !important;
+    margin: 20px 30px 0px 60px !important;
+    width: 50%;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    font: normal normal bold 15px/16px Segoe UI;
+}
